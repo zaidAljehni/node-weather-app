@@ -29,7 +29,9 @@ locationForm.addEventListener( "submit", (event) =>
         }
         else
         {
-            forecastParagraph.textContent = `Location: ${parsedData.location}\tLocal Time: ${parsedData.localtime}\nTemperature: ${parsedData.temperature}\tFeels like: ${parsedData.feelslike}\tWeather: ${parsedData.weather_description}`;
+//             forecastParagraph.textContent = `Location: ${parsedData.location}\tLocal Time: ${parsedData.localtime}\nTemperature: ${parsedData.temperature}\tFeels like: ${parsedData.feelslike}\tWeather: ${parsedData.weather_description}`;
+          
+          forecastParagraph.innerHTML = `<b>Location:</b> ${parsedData.location} <br> <b>Local Time:</b> ${parsedData.localtime} <br> <b>nTemperature:</b> ${parsedData.temperature} <br> <b>Feels like:</b> ${parsedData.feelslike} <br> <b>Weather:</b> ${parsedData.weather_description}`;
         }
         
         
